@@ -7,6 +7,7 @@ export default function ContactItem({ imageUrl, name, tag }) {
         <div className="contact-item">
             <ContactItemImage imageUrl={imageUrl} />
             <ContactItemBody name={name} tag={tag} />
+            <DeleteButton id={id} onDelete={onDelete} />
         </div>
     );
 }
